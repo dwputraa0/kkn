@@ -1,0 +1,119 @@
+.card-carousel-item {
+  box-sizing: border-box;
+}
+
+.card-activity {
+  background-color: rgb(159, 156, 235); /* White background for the card */
+  border-radius: 25px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow card */
+  width: 70%;
+  border: black;
+  border-style: solid;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.card-img-top {
+  padding: 1rem;
+}
+
+.card-img-top img {
+  border-radius: 30px;
+  width: 100%;
+  object-fit: cover; /* Cover the area of the container */
+  display: block;
+  border: 2px solid black;
+}
+
+.card-activity-body {
+  padding: 1rem; /* Padding inside the card body */
+  background-color: #fff;
+  margin: 20px;
+  border: 2px solid black; 
+  border-radius: 20px;
+  font-style: "Plus Jakarta Sans";
+}
+
+.card-activity-title {
+  font-size: 1.7rem; /* Responsive font size */
+  color: black; /* Dark text color */
+  margin-bottom: 5px;
+  height: auto;
+  width: auto;
+  color: rgb(36, 34, 74);
+}
+
+.card-activity-text {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #333; /* Dark text color */
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+
+.slick-prev, .slick-next {
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(159, 156, 235); /* Blue background for the buttons */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Increase font size for the arrows */
+  color: white; /* White arrow color */
+}
+
+.slick-prev::before, .slick-next::before {
+  content: ''; /* Remove default arrow icons */
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .card-activity {
+    width: 80%;
+  }
+  .card-activity-title {
+    font-size: 1.2rem; /* Responsive font size */
+  }
+  .card-activity-text {
+    font-size: 0.6rem; /* Responsive font size */
+  }
+
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev::after, .slick-next::after {
+    font-size: 18px; /* Adjust arrow size */
+  }
+  .card-activity-body {
+    padding: 1rem; /* Padding inside the card body */
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .card-img-top img {
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover; /* Cover the area of the container */
+    display: block;
+  }
+
+  .card-img-top {
+    padding: 0.5rem;
+  }
+}
+  

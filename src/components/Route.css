@@ -1,0 +1,228 @@
+.route-section {
+    padding: 30px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-container h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.route-img img {
+    width: 100%;
+    border-radius: 30px 0 30px 0;  
+    max-height: 500px;
+    border: black double 3px;
+}
+
+.route-img {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(159, 156, 235);
+    padding: 15px;
+    border-radius: 30px 0 30px 0;  
+    border: black solid 3px;
+    margin: 10px;
+    box-shadow: 0 20px 20px rgba(14, 52, 167, 0.2);
+}
+
+.button-container{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.maps-button{
+    background-color: rgb(56, 54, 104);
+    border: black solid 2px;
+    border-radius: 20px 0 20px 0;  
+    margin-left: 50px;
+    font-weight: bold;
+    box-shadow: 0 20px 20px rgba(14, 52, 167, 0.2);
+}
+
+.maps-button:hover {
+    background-color: rgb(85, 83, 150); /* Change this to your desired hover color */
+    border: black solid 2px;
+    border-radius: 20px 0 20px 0;  
+}
+
+.maps-button a {
+    color: #E8F3EB;
+    text-decoration: none;
+}
+
+.maps-button a p {
+    padding: 5px 20px;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.maps-button a p i {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.detail-section {
+    margin-top: 50px;
+    border-top: 5px double black;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center; /* Centers the text within the elements */
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: row; /* Places the left and right details side by side */
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 20px; /* Space between detail-container and bottom-detail */
+}
+
+.left-detail, .right-detail {
+    flex: 1;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+    color: white; /* Example color for text */
+    border: 3px solid black; /* Example border for distinction */
+    margin: 10px; /* Space between left and right details */
+    border-radius: 20px 0 20px 0; 
+    box-shadow: 0 20px 20px rgba(14, 52, 167, 0.2);
+    background-color: rgb(159, 156, 235); /* Background color for distinction */
+}
+
+.bottom-detail {
+    font-size: 40px;
+    color: white; /* Example color for text */
+    margin-top: 20px; /* Space above bottom-detail */
+    border: 3px solid black; /* Example border for distinction */
+    padding: 10px;
+    border-radius: 20px 0 20px 0; 
+    background-color: rgb(159, 156, 235); /* Background color for distinction */
+    width: fit-content;
+    box-shadow: 0 20px 20px rgba(14, 52, 167, 0.2);
+}
+
+@media (max-width: 1024px) {
+
+    .maps-button a p {
+        padding: 5px 20px;
+        font-size:20px;
+        margin: 0px;
+    }
+    
+    .route-container img {
+        width: 100%;
+    }
+
+    .route-img {
+        width: 70%;
+    }
+    .maps-button{
+        margin-left: 0px;
+    }
+
+    .left-detail, .right-detail, .bottom-detail {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        margin: 5px; /* Reduce margins for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .route-container{
+        flex-direction: column;
+    }
+    
+    .route-img {
+        padding: 7px;
+    }
+
+    .route-container img {
+        width: 100%;
+    }
+
+    .route-img {
+        width: 80%;
+    }
+
+    .maps-button a p {
+        font-size:20px;
+        margin-left: 0;
+    }
+
+
+    .left-detail, .right-detail, .bottom-detail {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin: 5px; /* Reduce margins for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .maps-button a p {
+        font-size:15px;
+    }
+
+    .route-img {
+        padding: 3px;
+    }
+    .route-container {
+        padding: 25px;
+    }
+
+    .route-img {
+        width: 70%;
+        min-width: 100px;
+    }
+    .maps-button{
+        margin-left: 0px;
+    }
+    .detail-container {
+        flex-direction: column; /* Stack the left and right details vertically on smaller screens */
+        margin-bottom: 10px; /* Reduce space for smaller screens */
+    }
+}
+@media (max-width: 375px) {
+    .maps-button a p {
+        font-size:15px;
+    }
+
+    .route-img {
+        padding: 3px;
+    }
+    .route-container {
+        padding: 10px;
+    }
+
+    .route-img {
+        width: 80%;
+        min-width: 100px;
+    }
+
+    .maps-button{
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,156 @@
+.testi-section {
+    padding-bottom: 120px;
+    padding-top: 40px;
+}
+
+.testi-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.testi-container-body {
+    display: flex;
+    flex-direction: wrap;
+    border-radius: 30px;
+    margin: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: rgb(159, 156, 235);
+    border: 2px solid black;
+    flex-direction: row;
+}
+
+.testi-container-body .testi-img {
+    width: 45%;
+    align-content: center;
+    align-items: center;    
+}
+
+.testi-container-body .testi-text {
+
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center; /* Center-align content */
+    width: 55%; /* Set desired width */
+    padding: 20px; /* Add padding for spacing inside the container *//* Center the container horizontally */
+    text-align: center; /* Center-align text */
+    border-radius: 30px;
+    margin: 30px;
+    background-color: white;
+    border: 2px solid black;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+
+.testi-text h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.testi-text h4 {
+    align-items: center;
+    border-top: 2px double black ;
+    text-align: justify;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.testi-text h3 {
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(59, 57, 104);
+    margin-right: 5;
+    font-weight: normal;
+    align-items: center;
+    text-align: center;
+}
+
+
+.testi-container .testi-img img {
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .testi-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testi-container .testi-img {
+        width: 100%;
+    }
+    
+    .testi-container .testi-text h2 {
+        text-align: justify;
+    }
+
+    .testi-container .testi-text {
+        padding-top: 25px;
+        width: 100%;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .testi-container .testi-text > * {
+        width: 90%;
+    }
+
+    .testi-container .testi-img img {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .testi-container-body .testi-text {
+        margin: 10px;
+    }
+    .testi-container h1 {
+        font-size: 25px;
+    }
+    
+    .testi-container h3 {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .testi-container h4 {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .testi-container .testi-img img {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .testi-container-body .testi-text {
+        margin: 5px;
+    }
+    .testi-container h1 {
+        font-size: 15px;
+    }
+    
+    .testi-container h3 {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .testi-container h4 {
+        font-size: 7px;
+        text-align: justify;
+    }
+}
