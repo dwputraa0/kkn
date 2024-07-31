@@ -1,7 +1,7 @@
 import './Description.css';
-import { Container, Breadcrumb } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import image from "./../assets/gapura.png"
-const Description = ({dest}) => {
+const Description = () => {
   return (
     <div id="deskripsi" className="desc-section">
         <Container className="container-sm container-md container-lg">

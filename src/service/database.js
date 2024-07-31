@@ -46,7 +46,7 @@ const olahragaData = [
   },
   {
     image: olahraga3,
-    title: 'Boal Voli',
+    title: 'Bola Voli',
     text: 'Setiap sore, warga Desa Harapan Mukti berkumpul di lapangan setiap RT untuk bermain bola voli bersama-sama. Olahraga ini merupakan yang paling populer di desa, menciptakan suasana kegembiraan dan kebersamaan di antara warga.',
   },
 ]

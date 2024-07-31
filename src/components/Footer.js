@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FaInstagram, FaEnvelope, FaCopyright, FaWhatsapp, FaMapMarkedAlt, FaFacebook, FaGlobe } from 'react-icons/fa';
+import { FaInstagram, FaCopyright, FaWhatsapp, FaMapMarkedAlt, FaFacebook, FaGlobe } from 'react-icons/fa';
 import './Footer.css';
 import image from "../assets/logo.png";
 
